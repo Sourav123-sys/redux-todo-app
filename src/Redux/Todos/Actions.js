@@ -1,5 +1,5 @@
 
-import {ADDED,ALCOMPLETE,DELETED,SELECTCOLOR,TOGGOLED,CLEARCOMPLETE} from "./ActionType"
+import {ADDED,ALLCOMPLETE,DELETED,SELECTCOLOR,TOGGLED,CLEARCOMPLETE} from "./ActionType"
 
 export const  added = (todotext) => {
     return{
@@ -7,9 +7,9 @@ export const  added = (todotext) => {
         payload:todotext
     }
 }
-export const  toggoled = (todoId) => {
+export const  toggled = (todoId) => {
     return{
-        type: TOGGOLED,
+        type: TOGGLED,
         payload:todoId 
     }
 }
@@ -30,7 +30,7 @@ export const  deleted = (todoId) => {
 }
 export const  allCompleted = () => {
     return{
-        type: ALCOMPLETE,
+        type: ALLCOMPLETE,
       
     }
 }
