@@ -1,15 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Navbar from './components/Navbar'
+import TodoList from './components/TodoList'
 
 function App() {
 
 
   return (
-    <div>
-      <h1 className="text-green-700 text-center text-3xl bg-black p-2 rounded"> React Redux Todo App</h1>
+    <div className="grid place-items-center bg-blue-100 h-screen px-6 font-sans">
+    <Navbar />
+
+    <div className="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
+        <Header />
+
+        <hr className="mt-4" />
+
+        <TodoList />
+
+        <hr className="mt-4" />
+
+        <Footer />
     </div>
+</div>
   )
 }
 
