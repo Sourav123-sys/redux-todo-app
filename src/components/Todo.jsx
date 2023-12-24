@@ -1,7 +1,9 @@
 import React from 'react';
 import cancel from '../assets/cancel.png'
 import { useDispatch } from 'react-redux';
-import { selectColor, toggled,deleted } from '../Redux/Todos/Actions';
+import { selectColor, toggled, deleted } from '../Redux/Todos/Actions';
+
+
 const Todo = ({todo}) => {
 const dispatch = useDispatch()
 

@@ -1,7 +1,8 @@
 
 import {ADDED,ALLCOMPLETE,DELETED,SELECTCOLOR,TOGGLED,CLEARCOMPLETE} from "./ActionType"
 
-export const  added = (todotext) => {
+export const added = (todotext) => {
+    console.log(todotext);
     return{
         type: ADDED,
         payload:todotext
