@@ -4,6 +4,7 @@ import doubleClick from '../assets/double-tick.png'
 import plusImage from "../assets/plus.png";
 import { useDispatch } from 'react-redux';
 import { added, allCompleted, clearCompleted } from '../Redux/Todos/Actions';
+import addTodo from '../Redux/Todos/thunk/addTodo';
 
 
 const Header = () => {
@@ -17,7 +18,7 @@ const Header = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        dispatch(added(input));
+        dispatch(addTodo(input));
         setInput("");
     };
 
