@@ -1,9 +1,5 @@
 
 
-export const initialState = [
-
-    
-
-]
+export const initialState = []
 
 export default initialState;

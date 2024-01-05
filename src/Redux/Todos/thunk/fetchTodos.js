@@ -1,9 +1,11 @@
-import { loaded } from "../actions";
+
+
+import { loaded } from "../Actions";
 
 const fetchTodos = async (dispatch) => {
     const response = await fetch("http://localhost:9000/todos");
     const todos = await response.json();
-
+console.log(todos,"todos");
     dispatch(loaded(todos));
 };
 
